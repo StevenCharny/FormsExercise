@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The weekend assignment over forms in html">
+    <title>Survey</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend>Customer Experience Survey</legend>
+            <label for="S#">Store Number</label>
+            <select name="StoreNumber" id="S#">
+                <option hidden>Select a store</option>
+                <option value="3109">3109</option>
+                <option value="2421">2421</option>
+                <option value="5357">5357</option>
+            </select>
+        <fieldset>
+            <legend>When you visited:</legend>
+                <label for="DateofVisit">Date Visited</label>
+                <input type="date" id="DateofVisit" name="Date" value="mm/dd/yyyy">
+                <br>
+                <label for="TimeofVisit">Time</label>
+                <input type="time" id="TimeofVisit" min="2021-01-01" max="2021-12-31">
+        </fieldset>
+        <label for="FullName"> Full Name:</label>
+        <input type="text" id="FullName" placeholder="Name">
+        <br>
+        <label for="Email"> Email:</label>
+        <input type="email" id="Email" placeholder="Email">
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="Gender1" value="male" name="gender">
+            <label for="Gender1">Male</label>
+            <br>
+            <input type="radio" id="Gender2" value="female" name="gender" checked>
+            <label for="Gender2">Female</label>
+            <br>
+            <input type="radio" id="Gender3" value="other" name="gender">
+            <label for="Gender3">Non-Binary / Other</label>
+            <br>
+            <input type="radio" id="Gender4" value="none" name="gender">
+            <label for="Gender4">Prefer not to say</label>
+        </fieldset>
+        <label for="Experience">Tell us about your Experience</label>
+        <br>
+        <textarea name="Experience" id="Experience" cols="20" rows="2"></textarea>
+        <br>
+        <label for="TimesVisited">Times visited in the last month:</label>
+        <input type="number" id="TimesVisited" min="1" max="30">
+        <br>
+        <input type="checkbox" name="contact" id="contact" unchecked required>
+        <label for="contact">Please check the box if you would be willing to be contacted about your experience</label>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" maxlength="10" minlength="5">
+        <br>
+        <input type="reset">
+        <input type="submit">
+    </fieldset>
+    </form>
+</body>
+</html>
